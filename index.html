@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>My Sliding Puzzle</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+   <center>
+      <div id="heading">
+         <h1>My Sliding Puzzle</h1>
+      </div>
+      <button id="myBtn"">Instructions</button>
+
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+
+         <!-- Modal content -->
+         <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>
+            <h4>Instructions:</h4><br>
+            # You have to mave the squares by clicking on the tile adjecent to the vacant tile.<br>
+            # Clicking on any other tile will not do anything.<br>
+            # Step by step arrange the tile in numerical order with the vacant tile in bottom right position.<br>
+            # Refresh page to go to home screen
+
+            </p>
+         </div>
+
+      </div>
+      <div id="game">
+         <h3 id="levels">Difficulty Levels - </h3>
+         <div class="level" onclick="initialise_n(3);">3 X 3 : Easy</div>
+         <div class="level" onclick="initialise_n(4);">4 X 4 : Moderate</div>
+         <div class="level" onclick="initialise_n(5);">5 X 5 : Difficult</div>
+         <div class="level" onclick="initialise_n(6);">6 X 6 : Very Difficult</div>
+      </div>
+      <h1 class="message"></h1>
+      <script src="javascrpt.js"></script>
+   </center>
+</body>
+
+</html>
